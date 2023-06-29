@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visita de Clientes</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="build/img/visitante (1).png" alt="Logotipo de Visita Clientes">
+                </a>
+
+                <div class="mobile-menu">
+                    <img src="build/img/barra1.jpg" alt="icono menu responsive">
+                </div>
+
+                
+                
+            </div> <!--.barra-->
+        </div>
+    </header>
+
+    <main class="contenedor seccion">
+        <h1>Contacto</h1>
+
+        <picture>
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+            <img loading="lazy" src="build/img/destacada3.jpg" alt="Imagen Contacto">
+        </picture>
+
+        <h2>Llene el formulario de Visita</h2>
+
+        <form method="post" action="mail.php" class="formulario">
+            <fieldset>
+                <legend>Información Cliente</legend>
+
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" placeholder="Tu Nombre" id="nombre" name="contacto[nombre]" autocapitalize="words" autocomplete="off">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Tu Email" id="email" name="contacto[email]">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="Tu Teléfono" id="telefono" name="contacto[telefono]">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="contacto[mensaje]" id="mensaje"></textarea>
+            </fieldset>
+
+            <!-- <fieldset>
+                <legend>Información de la Visita</legend>
+
+                <label for="opciones">Seleccione:</label>
+                <select id="opciones" name="contacto[asunto]">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Visita">Visita</option>
+                    <option value="Homologación">Homologación</option>
+                    <option value="Instalación">Instalación</option>
+                    <option value="Antena">Antena</option>
+                    <option value="Base">Base</option>
+                    <option value="Cable">Cable</option>
+                    <option value="Router">Router</option>
+                    <option value="Mástil">Mástil</option>
+                    <option value="Vientos Conectores">Vientos Conectores</option>
+                    <option value="Poe">Poe</option>
+                    <option value="Otros">Otros</option>
+                </select>
+
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de Pago</legend>
+
+                <select name="contacto[pago]" id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Efectivo Bolivares">Efectivo Bolivares</option>
+                    <option value="Efectivo Dolares">Efectivo Dolares</option>
+                    <option value="Pago Movil">Pago Movil</option>
+                </select>
+                <label for="presupuesto">Monto</label>
+                <input type="number" placeholder="Monto" id="presupuesto" name="contacto[monto]">
+
+                <label for="nombre">Hemos Recibido la cantidad de:</label>
+                <input type="text" placeholder="Cantidad" id="cantidad" name="contacto[cantidad]">
+
+                <p>Elija la fecha y la hora</p>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="contacto[fecha]">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00" name="contacto[hora]">
+
+                <label for="nombre">Nombre del Técnico</label>
+                <input type="text" placeholder="Tu Nombre" id="nombre" name="contacto[tecnico]" autocapitalize="words" autocomplete="off">
+
+                
+
+            </fieldset> -->
+
+            <input type="submit" value="Enviar" class="boton-verde">
+        </form>
+    </main>
+
+    <footer class="footer seccion">
+        
+        <p class="copyright">Todos los derechos Reservados 2023 &copy;</p>
+    </footer>
+
+    
+</body>
+</html>
